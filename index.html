@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Giphy Homework</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<header class="bg-success">
+ <h1 class="text-center text-white">Animal Gifs</h1>
+</header>
+<body class= "bg-primary">
+<div class="container">
+    <div class="jumbotron jumbotron-fluid bg-white">
+    <div class="row"></div>
+        <div class="row">
+            <div class="col-">
+            <div class="btn-group inline pull-left">
+      <button class="btn btn-info m-3" id="topic" data-search="Shark">Shark</button>
+      <button class="btn btn-info m-3" id="topic" data-search="Armadillo">Armadillo</button>
+      <button class="btn btn-info m-3" id="topic" data-search="Gecko">Gecko</button>
+      <button class="btn btn-info m-3" id="topic" data-search="Penguin">Penguin</button>
+      <button class="btn btn-info m-3" id="topic" data-search="Gorilla">Gorilla</button>
+      <button class="btn btn-info m-3" id="topic" data-search="Chimp">Chimp</button>
+      <button class="btn btn-info m-3" id="topic" data-search="Snake">Snake</button>
+      <button class="btn btn-info m-3" id="topic" data-search="Bird">Bird</button>
+      <button class="btn btn-info m-3" id="topic" data-search="Parrot">Parrot</button>
+      <button class="btn btn-info m-3" id="topic" data-search="Gator">Gator</button>
+    </div>
+    <div class="col-3">
+            <form class="form-inline my-2 my-lg-0" id="AnimalSearch ">
+                    <label for="Input" class="text-bold text-primary" id="add-animal">Search animals</label>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="Input">
+                    <button class="btn btn-outline-info m-2 bg-white" type="submit" id="addTopic">Search</button>
+                  </form>
+                </div>
+    </div>
+    <div class="row">
+      <div class="newButtons"></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <span><div id="gifArea"></div></span>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="javascript/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+</html>
