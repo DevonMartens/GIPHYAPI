@@ -67,13 +67,17 @@ $(document).ready(function() {
          else {
          $(this).attr("src", $(this).attr("data-still"));    
          $(this).attr("data-state", "still");
-           
+         }
+         
    
      $("#add-animal").on("click", function(event) {
          event.preventDefault();
          var newAnimal = $("input").eq(0).val(0); 
        if(newAnimal.length > 2) {
            topics.push(newAnimal);
+       }
       
      
-         populateButtons(animals, "newButton", "#animalbuttons");
+         populateButtons(animals, "newButton", "#newButtons");
+
+    });
