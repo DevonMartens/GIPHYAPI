@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var topics = ["Shark", "Armadillo", "Gecko", "Penguin", "Gorilla", "Chimp", "Snake", "Bird", "Parrot", "Gator"];
    
-   function populateButtons(topics, ".newButtons", "#gifArea") {
+   function populateButtons() {
        $('#addedButton').empty(); 
    }
    
@@ -11,7 +11,7 @@ $(document).ready(function() {
          animalButton.addClass(classToAdd);
          animalButton.attr('data-type', arrayToUse[i]);
          animalButton.text(topics[i]);
-         $(topics.append(a);
+         $(topics).append(a);
        }
    
      
@@ -76,8 +76,5 @@ $(document).ready(function() {
        if (newAnimal.length > 2) {
            topics.push(newAnimal);
        }
-      
-     
-         populateButtons(animals, "newButton", "#newButtons");
-
     });
+})
