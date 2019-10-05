@@ -36,23 +36,18 @@ $(document).ready(function() {
 
          event.preventDefault();
 
-​
-
         var newAnimal = $("#Input").val().trim();
 
         topics.push(newAnimal)
 
-​
 
         populateButtons();
 
-​
 
         
 
     })
 
-​
 
     $(document).on("click", ".topics", function () {
 
@@ -163,5 +158,4 @@ $(document).ready(function() {
          }
 
         })
-
-   
+    })
